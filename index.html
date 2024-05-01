@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>Big</title>
   <link href="big.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="themes/dark.css" rel="stylesheet" type="text/css" /> -->
   <script src="big.js"></script>
 </head>
 <body class="light">
@@ -145,7 +146,10 @@
   And I have PTSD from 3 days lost in Postgres errors in 2012
 </div>
 <div>
-  But we had a really cool candidate for an exploratory map
+  But we had a dataset that we really wanted to map
+</div>
+<div>
+  And we wanted the map to be slippy
 </div>
 <div>
   😓
@@ -210,22 +214,79 @@
   <notes>Again, thanks Brent for your spelunking</notes>
 </div>
 <div>
-  Now the annoying part. 
+  Now the fun part
 </div>
 <div>
   Styling
 </div>
+<div>With Maplibre/Mapbox's style spec</div>
 <div>
-  Maputnik is great,
+  🤢
+</div>
+<div>
+  Maputnik is a great place to start
   <notes>
     just use the default, and then attach the wires on your end
   </notes>
+</div>
+<div>
+  <img src="images/image18.png">
 </div>
 <div>
   Who doesn't want to write this sort of code:
 </div>
 <div>
   <img src="images/image17.png">
+</div>
+<div>
+  But our friend the 🤖 helps A LOT
+</div>
+<div>
+  <img src="images/image19.png">
+</div>
+<div>
+  <img src="images/image20.png">
+</div>
+<div>
+  Occassionally, it will lie to you
+</div>
+<div>
+  <img src="images/image21.png">
+  <notes>
+    I don't think this exists, and that's why it lied to me. 
+  </notes>
+</div>
+<div>
+  <img src="images/image22.png">
+  <notes>transparentize is a css function that exists in sass, but as far as I can tell, not in mapbox or maplibre</notes>
+</div>
+<div>
+  <img src="images/image23.png">
+  <notes>Correct me if I'm wrong.</notes>
+</div>
+<div>
+  But after styling OSM with maputnik 
+</div>
+<div>
+  And our data with help from 🤖
+</div>
+<div>
+  You get a pretty, customizable, fast and CHEAP map
+</div>
+<div>
+  (oh psst: quick aside, I didn't go into the data that we are layering in here...We pre processed it in QGIS and then converted to pmtiles with tippacanoe. And I'm not going to tell you what it contains because we haven't launched yet but it's going to be cool...stay tuned. 2 weeks)
+</div>
+<div>anyway...</div>
+<div>
+  <video autoplay muted>
+    <source src="images/map.mov" type="video/mp4">
+  </video>
+</div>
+<div>
+  Questions? Thoughts? Comments? Suggestions? <br>
+  dwood@npr.org<br>
+  Thankps
+
 </div>
 </body>
 </html>
