@@ -299,12 +299,29 @@
     <img style="height:100vh" src="images/image108.png">
   </a>
 </div>
-
 <div>
-  <span style='text-decoration: line-through;'>🌎 OpenMapTiles for building tiles<br></span>
-  🌎 PMTiles for tile hosting ✅<br>
-  🌎 Maputnik(?) for style editing <br>  
-  🌎 Maplibre-gl-js for client-side rendering<br>
+   Transferring the data for about 100,000 tiles would cost $1.
+</div>
+<div>
+The main two axes to save money are:<br>
+ - to reduce the total number of tiles requested, and<br>
+ - to reduce the size of each tile.
+</div>
+<div>
+  Hide layers at certain zooms. 
+  <notes>For instance, we opted to avoid showing the hillshade layer until the map was zoomed in. This reduced the number of large tiles requested. </notes>
+</div>
+<div>
+Lazy-load tile layers. 
+  <notes>Initially the show/hide logic was based on the opacity of layers. This requested 3-4 more tiles than needed to be shown at any given time, which was costly and inefficient. Changing this logic dramatically improved the browser’s paint speed as well.</notes>
+</div>
+<div>
+Cap maximum zoom level in explore mode
+<notes>At a certain point, the user doesn’t need to zoom any further, so limit it to save on the number of tile requests. </notes>
+</div>
+<div>
+Limit or delay exploration if it’s not essential.
+<notes>We really wanted to have folks be able to find themselves in the data and explore it. Sometimes this is not necessary. Limiting exploration confined the upper end of possible costs. </notes>
 </div>
 <div>Styling!</div>
 <div>With Maplibre/Mapbox's style spec</div>
@@ -394,17 +411,20 @@
   - harder to style than other user interfaces
 </div>
 <div>
+  <img src='images/horse.png'>
+</div>
+<div>
   Here's some resources that might be helpful: <br>
-  ### Make your fonts work on your map
-- https://maplibre.org/font-maker/
-  ### Help with sprite creation
-- https://github.com/flother/spreet
-  ### OpenTileMap<br>
+### Make your fonts work on your map<br>
+- https://maplibre.org/font-maker/<br>
+<br>### Help with sprite creation<br>
+- https://github.com/flother/spreet<br>
+<br>### OpenTileMap<br>
 - https://github.com/maptiler/foss4g-workshop?tab=readme-ov-file<br>
 - https://www.youtube.com/watch?v=mx9l_yn8Dc0&list=PLGHe6Moaz52Mcq4BC9vczIIizNzwIYocv&index=2&ab_channel=MapTiler<br>
 <br>
 ### Maputnik<br>
-- https://www.youtube.com/watch?v=XoDh0gEnBQo&t=292s&ab_channel=Lukas
+- https://www.youtube.com/watch?v=XoDh0gEnBQo&t=292s&ab_channel=Lukas<br>
 - https://github.com/maplibre/maputnik/wiki/Style-GeoJSON-Files<br>
 - style spec: https://docs.mapbox.com/style-spec/guides/<br>
 - You may need a maptiler (free) account and API key to use this locally...this is poorly documented: https://cloud.maptiler.com/account/keys/<br>
