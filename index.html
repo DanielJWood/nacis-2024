@@ -263,7 +263,25 @@
   Next, we just put the pmtiles into an S3 bucket.
   <notes>https://docs.protomaps.com/deploy/aws</notes>
 </div>
+<div>
+  Then using MapLibre GL JS, add the PMTiles protocol
+</div>
+<div>
+  <img src="images/image16.png">  
+</div>
 <div>That's it.</div>
+<div>But wait! There's more!</div>
+<div>Don't know how to use S3?</div>
+<div>Get an API key and simply pay Brandon for his tiles!</div>
+<div>Or just sponsor him anyway</div>
+<div>
+  <a href="https://github.com/sponsors/protomaps">
+    <img style="width:100vw" src='images/image110.png'>
+  </a>
+</div>
+<div>(Talk to Brandon if you can, he is really smart.)
+  <notes>I'm not going to get into the ins and outs of why pmtiles is superior.</notes>
+</div>
 <div>
   Okay, $ talk:
   <notes>And check out how cheap it is, by comparison to other options</notes>
@@ -297,13 +315,21 @@
   🤢
 </div>
 <div>
-  Maputnik is a great place to start
+  Maputnik is a great place to start for styling your basemap
   <notes>
-    just use the default, and then attach the wires on your end
+    I found it to be sort of tricky to get rolling. My recommendation is that you should Use one of the OS defaults styles as a starting point, and then tweak colors, sizes, etc. from there. 
+
+    DM me on slack if you want me to make a tutorial on how to get rolling with it.
   </notes>
 </div>
 <div>
   <img src="images/image18.png">
+</div>
+<div>
+  But what about styling the USDA data?
+</div>
+<div>
+  <img src='images/image111.png'>
 </div>
 <div>
   Who doesn't want to write this sort of code:
@@ -347,16 +373,32 @@
   You get a pretty, customizable, fast and CHEAP map
 </div>
 <div>
-  (oh psst: quick aside, I didn't go into the data that we are layering in here...We pre processed it in QGIS and then converted to pmtiles with tippacanoe. And I'm not going to tell you what it contains because we haven't launched yet but it's going to be cool...stay tuned. 2 weeks)
+  (oh psst: quick aside, I didn't go into the data that we are layering in here...We pre processed it in QGIS and then converted to pmtiles with tippacanoe. Longer blog TK!)
 </div>
 <div>anyway...</div>
 <div>
   <video autoplay muted>
-    <source src="images/map.mov" type="video/mp4">
+    <source src="images/usda-npr24.mov" type="video/mp4">
   </video>
+</div>
+<div>Pros</div>
+<div>
+  - CHEAP!<br>
+  - beautiful and customizable<br>
+  - You keep it forever...(or until S3 explodes)<br>
+</div>
+<div>Cons</div>
+<div>
+  - time consuming to learn! and daunting!<br>
+  - less support options when you get lost, compared to paying for a SaaS<br>
+  - harder to style than other user interfaces
 </div>
 <div>
   Here's some resources that might be helpful: <br>
+  ### Make your fonts work on your map
+- https://maplibre.org/font-maker/
+  ### Help with sprite creation
+- https://github.com/flother/spreet
   ### OpenTileMap<br>
 - https://github.com/maptiler/foss4g-workshop?tab=readme-ov-file<br>
 - https://www.youtube.com/watch?v=mx9l_yn8Dc0&list=PLGHe6Moaz52Mcq4BC9vczIIizNzwIYocv&index=2&ab_channel=MapTiler<br>
@@ -388,11 +430,3 @@
 </div>
 </body>
 </html>
-
-<div>
-  Then using MapLibre GL JS, add the PMTiles protocol
-</div>
-<div>
-  <img src="images/image16.png">
-  <notes>Again, thanks Brent for your spelunking</notes>
-</div>
