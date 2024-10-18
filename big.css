@@ -119,3 +119,61 @@ div.slide > canvas:only-child,
 div.slide > video:only-child {
   width: 100%;
 }
+
+
+@keyframes walkingScreen {
+  0% {
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  5% {
+    left: calc(100% - 92px);
+    rotate: 0deg;
+  }
+  5.1% {
+    rotate: -90deg;
+    top: calc(100% - 92px);
+  }
+
+  10% {
+    rotate: -90deg;
+    left: calc(100% - 92px);
+    top:-8px;
+  }
+
+  10.1% {
+    rotate: -180deg;
+    left: calc(100% - 92px);
+  }
+
+  20% {
+    top:-8px;
+    left:-200px;
+    rotate: -180deg;
+  }
+
+}
+
+.pot2 {
+  position: fixed;
+  bottom: -8px; 
+  left: -200px;
+  width: 100px;
+  height: 100px;
+  z-index: 10000;
+  pointer-events: none;
+  animation: walkingScreen 120s linear infinite;
+  padding: unset;
+}  
+
+.pot2.walking img {
+  display: block;
+}
+
+.slide-container:first-child {
+  display: block !important;
+}

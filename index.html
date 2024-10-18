@@ -8,14 +8,25 @@
   <script src="big.js"></script>
 </head>
 <body class="light">
-  <div>
-    Hi
-    <notes>Speakers notes go here.</notes>
-  </div>
-<div>I'm Dan(iel) Wood</div>
+<div class="pot2 walking">
+  <img alt="walking pot" src="images/walker.gif">
+</div>
+<div>
+  <img style="height: 100vh;" src='images/qrcode_danieljwood.github.io.png'>
+</div>
+<div>
+  Hi
+</div>
+<div>I'm Dan Wood</div>
 <div>
   A graphics reporter at NPR
   <notes>I specialize in maps, but do lots of things</notes>
+</div>
+<div>
+  I've decided to retitle this talk...
+</div>
+<div>
+  If this idiot can self-host his own custom tiles, you can too (for cheap!)
 </div>
 <div>
   <a href="https://www.npr.org/2023/10/06/1203372829/the-bruising-artillery-battle-in-ukraine-has-left-a-scar-that-is-visible-from-sp"><img src="images/image2.png"></a>
@@ -37,15 +48,15 @@
 <div>
   I used to make a lot of slippy maps
   <notes>
-    I used to do a lot of slippy maps in the early days of (free) mapbox. 
+    I used to do a lot of slippy maps in the early days of (free) mapbox. I was an intern at Mapbox back in the earliest of early days. Tilemill!
   </notes>
 </div>
 <div class='layout'
     style='grid-template-columns: 1fr;grid-template-rows:30% 100%;'
   >
   <div>2014</div>
-  <img style='' src='images/image18.png'>
-  <notes>Here's a map I made a decade ago</notes>
+  <img style='' src='images/image102.png'>
+  <notes>Here's a map I made a decade ago when I was working at the Dept. of Energy.</notes>
 </div>
 <div>
   But over the last 5+ years I've avoided them.
@@ -55,7 +66,7 @@
     style='grid-template-columns: 1fr;grid-template-rows:30% 100%;'
   >
   <div>2024</div>
-  <img style='' src='images/image19.png'>
+  <img style='' src='images/image103.png'>
   <notes>Here's that same map now...it's broken! Someone stopped paying their bill. </notes>
 </div>
 <div>
@@ -64,36 +75,63 @@
 <div class='layout'
     style='grid-template-columns: 1fr;grid-template-rows:25% 25%;'
   >
-  <div>What is this (still) costing the Urban Institute?</div>
+  <div>What is this (still) costing the Urban Institute? (my former employer)</div>
   <img style="height: 100vh;" src="images/image5.png">
   <notes>https://apps.urban.org/features/baltimore-investment-flows/</notes>
 </div>
 <div>
-  We are poor
+  "You wouldn't pay someone a monthly subscription just to custom host your css files would you?"<br>-Brandon Liu of Protomaps, last night (paraphrase)
+</div>
+<div>Can we FREE the tile?????</div>
+<div>
+  <div>NPR is a non-profit</div>
+  <div style='font-size:10%'>&nbsp;</div>
+  <notes>We try to save money wherever possible, and ongoing licenses are something we avoid.</notes>
 </div>
 <div>
-  <img src='images/anna.gif'>
+  <div>NPR is a non-profit</div>
+  <div style='font-size:10%'>(poor)</div>
+  <notes>We try to save money wherever possible, and ongoing licenses are something we avoid.</notes>
 </div>
 <div>
   This is a problem
 </div>
 <div>Our peers still make incredible interactive maps</div>
-<div >
+<div style=" overflow: hidden !important;">
   <a href="https://www.nytimes.com/interactive/2023/upshot/extremely-detailed-nyc-neighborhood-map.html">
-    <img src="images/image6.png">
+    <img style="width:100vw; overflow: hidden !important;" src="images/image6.png">
   </a>
   <notes>
-    
+    Josh Katz who presented yesterday worked on this. Shout out.
   </notes>
 </div>
-<div>We want to do really cool, immersive maps at NPR. </div>
+<div>and want in on the fun!</div>
 <div>In particular...</div>
 <div>
-  <img src="image100.png">
-  <notes>The USDA hardiness map was updated about a year ago for the first time in 10+ years</notes>
+  <a href="https://planthardiness.ars.usda.gov/">
+    <!-- <div> -->
+      <video style="width: 100%;" autoplay muted>
+        <source src="images/usda.mov" type="video/mp4">
+      </video>
+    <!-- </div> -->
+  </a>
+  <notes>The USDA hardiness map was updated about a year ago for the first time in 10+ years. </notes>
 </div>
 <div>
-  Enter Kevin Schaul, Wapo
+  <a href="https://www.npr.org/2023/11/17/1213600629/-it-feels-like-im-not-crazy-gardeners-arent-surprised-as-usda-updates-key-map">
+    <video style="width: 100%; border: 1px solid black" autoplay muted>
+      <source src="images/usda-npr1.mov" type="video/mp4">
+    </video>
+  </a>
+  <notes>My colleague Julia Simon did a quick story on this, after it's release in Nov. 2023. Aly Hurt put together this dirty before/after. </notes>
+</div>
+<div>It's cool but....</div>
+<div>I WANT MORE</div>
+<div>
+  But how? 
+</div>
+<div>
+  Enter Kevin Schaul, Washington Post
 </div>
 
 <div>
@@ -108,7 +146,7 @@
   <a href="https://www.washingtonpost.com/business/interactive/2023/all-cash-buyers-housing-market/">
     <img src="images/image8.png">
   </a>
-  <notes>His team created a really amazing interactive map, with all opensource tools.</notes>
+  <notes>His team created a really amazing interactive map, with all open source tools.</notes>
 </div>
 <div>
   So maybe it's possible.
@@ -117,12 +155,12 @@
   All I need is 
 </div>
 <div>
-  to understand how any of this works
+  to understand...
 </div>
 <div>
   🌎 OpenMapTiles for building tiles<br>
-  🌎 Maputnik for style editing<br>
   🌎 PMTiles for tile hosting<br>
+  🌎 Maputnik for style editing<br>  
   🌎 Maplibre-gl-js for client-side rendering<br>
 </div>
 <div>
@@ -130,43 +168,49 @@
   <notes>Remember, I haven't touched this stuff since 2018 or so. Most of this was foreign to me.</notes>
 </div>
 <div>
-  Hello and welcome to my talk
-</div>
-<div>A true <strong>idiot's</strong> guide to self hosting interacting maps</div>
-<div>
   So I tried to dig in
 </div>
+<div>Just a simple workflow for baking your own tiles from OSM data...</div>
 <div>
-  And I got far enough to make this flowchart
+  <img src='images/image105.png'>
 </div>
 <div>
-  <img  src="images/image9.png">
+  "the most bonkers Makefile I have ever seen."<br>
+  -Kevin Schaul
 </div>
-<div>This is defintiely wrong. But this is closer to correct...</div>
+<div>Did I mention it involved Docker!</div>
+<div>
+  Everyone knows how to use Docker!
+  <div style='font-size:10%'>&nbsp;</div>
+</div>
+<div>
+  Everyone knows how to use Docker!
+  <div style='font-size:10%'>(No I don't)</div>
+</div>
+<div>
+  <img style="width: 1000px" src="images/image106.png">
+</div>
+<div>No</div>
+<div>
+  Oh maybe OpenMapTiles parent company will help make this easier...
+</div>
+<div>
+  <img src='images/image104.png'>
+</div>
+<div>
+  😓
+</div>
+<div>
+  After a bunch of hours of tutorials, dead ends, and semi-dead ends... I had...
+</div>
+<div>
+  A rough idea of the how the stack should work
+</div>
 <div>
   <img  src="images/image10.png">
 </div>
 <div>
-  But I still didn't have a map
-</div>
-<div>
-  And the OpenMapTiles makefile kept erroring out on my new mac
-  <notes>https://github.com/openmaptiles/openmaptiles</notes>
-</div>
-<div>
-  But not my old mac (???)
-</div>
-<div>
-  And I have PTSD from 3 days lost in Postgres errors in 2012
-</div>
-<div>
-  But we had a dataset that we really wanted to map
-</div>
-<div>
-  And we wanted the map to be slippy
-</div>
-<div>
-  😓
+  But several errors, and no map.
 </div>
 <div>
   Enter Chris Amico, from MuckRock
@@ -193,21 +237,33 @@
   Guess what? 
 </div>
 <div>
-  You can kinda skip the whole tile generation step
+  You don't have to make your own tiles from scratch! 
+</div>
+<div>
+  <span style='text-decoration: line-through;'>🌎 OpenMapTiles for building tiles<br></span>
+  🌎 PMTiles for tile hosting<br>
+  🌎 Maputnik for style editing<br>  
+  🌎 Maplibre-gl-js for client-side rendering<br>
 </div>
 <div>
   <a href="https://maps.protomaps.com/builds/">
     <img src="images/image13.png">
-  </a>
-  <notes>It's kinda hard to find, and of course its a big ass download. beware. But it is the whole world, downloaded every monday</notes>  
+  </a>  
 </div>
+<div>Its a big ass download. But I believe in you.</div>
+<div>You are resourceful.</div>
+<div>You can download 120GB</div>
+<div>You can also extract a smaller portion</div>
 <div>
-  From there, Brent filtered to the continental US. Go Brent. Ask Brent how. idk
-  <notes>Kudos to my teammate Brent Jones, based out of St. Louis, who was able to make heads and tales of all this</notes>
+  <a href="https://docs.protomaps.com/pmtiles/cli#extract">
+    <img style="width:100%" src="images/image107.png">
+  </a>  
 </div>
 <div>
   Next, we just put the pmtiles into an S3 bucket.
+  <notes>https://docs.protomaps.com/deploy/aws</notes>
 </div>
+<div>That's it.</div>
 <div>
   Okay, $ talk:
   <notes>And check out how cheap it is, by comparison to other options</notes>
@@ -221,19 +277,22 @@
   </a>
 </div>
 <div>
-  Then using MapLibre GL JS, add the PMTiles protocol
+  <a href="https://docs.protomaps.com/deploy/cost/">
+    <img style="height:100vh" src="images/image108.png">
+  </a>
 </div>
+
 <div>
-  <img src="images/image16.png">
-  <notes>Again, thanks Brent for your spelunking</notes>
+  <span style='text-decoration: line-through;'>🌎 OpenMapTiles for building tiles<br></span>
+  🌎 PMTiles for tile hosting ✅<br>
+  🌎 Maputnik(?) for style editing <br>  
+  🌎 Maplibre-gl-js for client-side rendering<br>
 </div>
-<div>
-  Now the fun part
-</div>
-<div>
-  Styling
-</div>
+<div>Styling!</div>
 <div>With Maplibre/Mapbox's style spec</div>
+<div>
+  <img src='images/image109.png'>
+</div>
 <div>
   🤢
 </div>
@@ -329,3 +388,11 @@
 </div>
 </body>
 </html>
+
+<div>
+  Then using MapLibre GL JS, add the PMTiles protocol
+</div>
+<div>
+  <img src="images/image16.png">
+  <notes>Again, thanks Brent for your spelunking</notes>
+</div>
