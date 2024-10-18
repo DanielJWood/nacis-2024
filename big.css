@@ -177,3 +177,9 @@ div.slide > video:only-child {
 .slide-container:first-child {
   display: block !important;
 }
+
+@media (max-width: 1000px) {
+  a {
+    pointer-events: none;
+  }
+}
